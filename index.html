@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Motivário — Sua dose de motivação diária</title>
+
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -11,36 +12,82 @@
       text-align: center;
       padding: 60px 20px;
     }
+
     img.logo {
       width: 90px;
       border-radius: 50%;
       margin-bottom: 20px;
     }
+
     h1 {
       margin: 0;
       font-size: 26px;
       color: #111;
     }
+
     p {
       color: #555;
       margin-bottom: 30px;
     }
-    .store-buttons img {
-      height: 60px;
-      margin: 10px;
+
+    .store-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .store-button {
+      width: 180px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .store-button img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
   </style>
 </head>
 <body>
+
   <img src="https://raw.githubusercontent.com/Thiagoweber/motivario-pages/main/logo-motivario.png" alt="Logo Motivário" class="logo">
+
   <h1>Motivário</h1>
   <p>Sua dose de motivação diária</p>
   <p>Se o link não funcionar dentro do TikTok, toque nos três pontos e selecione <em>Abrir no navegador</em>.</p>
 
   <div class="store-buttons">
-    <a href="https://apps.apple.com/br/app/motiv%C3%A1rio/id6752780632" target="_blank">
-      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+    <!-- App Store -->
+    <a
+      class="store-button"
+      href="https://apps.apple.com/br/app/motiv%C3%A1rio/id6752780632"
+      target="_blank"
+      rel="noopener"
+    >
+      <img
+        src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+        alt="Baixar na App Store"
+      >
+    </a>
+
+    <!-- Google Play -->
+    <a
+      class="store-button"
+      href="https://play.google.com/store/apps/details?id=app.motivario&pcampaignid=web_share"
+      target="_blank"
+      rel="noopener"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+        alt="Disponível no Google Play"
+      >
     </a>
   </div>
+
 </body>
 </html>
